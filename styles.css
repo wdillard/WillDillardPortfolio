@@ -247,3 +247,21 @@ p {
     vertical-align: -0.125em;
 }
 
+footer {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: #242424;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: whitesmoke;
+    line-height: 20px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.7em;
+    font-weight: 200;
+    text-align: center;
+    bottom: 0;
+}
