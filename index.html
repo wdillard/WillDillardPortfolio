@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <nav class="navbar">
-            <div><a href="#introSection">Intro</a></div>
-            <div><a href="#aboutSection">About Me</a></div>
-            <div><a href="#projectSection">My Projects</a></div>
-            <div><a href="#contactSection">Contact Me</a></div>
+        <nav id="navbar">
+            <a href="#introSection">Intro</a>
+            <a href="#aboutSection">About Me</a>
+            <a href="#projectSection">My Projects</a>
+            <a href="#contactSection">Contact Me</a>
         </nav>
         <div>
             <div id="introSection">
@@ -71,5 +71,16 @@
                 </div>
             </div>
         </div>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-50px";
+              }
+            }
+            </script>
     </body>
 </html>

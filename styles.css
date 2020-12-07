@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500&display=swap');
 
-.navbar {
-    overflow: hidden;
-    background: none;
-    position: sticky;
-    top: 0;
+#navbar {
+    background-color: transparent;
+    position: fixed;
+    top: -50px;
     width: 100%;
+    display: block;
+    transition: top 0.3s;
 }
 
-.navbar a {
+#navbar a {
     float: left;
     display: block;
     color: whitesmoke;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px;
     text-decoration: none;
+    font-size: 16px;
 }
 
-.navbar a:hover {
+#navbar a:hover {
     background: none;
     color: red;
 }
