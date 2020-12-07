@@ -8,7 +8,6 @@
     width: 100%;
 }
 
-/* Links inside the navbar */
 .navbar a {
     float: left;
     display: block;
@@ -18,7 +17,6 @@
     text-decoration: none;
 }
 
-/* Change background on mouse-over */
 .navbar a:hover {
     background: none;
     color: red;
@@ -115,8 +113,8 @@ body {
     height: 900px;
 }
 
-#photoBW {
-    height: 200px;
+#willPhoto {
+    height: 300px;
     border-radius: 50%;
 }
 
@@ -162,7 +160,7 @@ p {
     justify-content: space-around;
     align-items: center;
 }
-/* Test ============================*/
+
 .container {
     position: relative;
     width: 40%;
@@ -198,13 +196,13 @@ p {
 }
 
 #projectSite {
-    content: url('https://api.iconify.design/fa-solid:external-link-square-alt.svg?color=black&height=50');
-    vertical-align: -0.125em;
+    content: url('https://api.iconify.design/gridicons:site.svg?color=whitesmoke&height=66');
+    vertical-align: -0.55em;
 }
 
 #projectGithub {
-    content: url('https://api.iconify.design/jam:github-square.svg?color=black&height=52');
-    vertical-align: -0.125em;
+    content: url('https://api.iconify.design/jam:github-square.svg?color=whitesmoke&height=52');
+    vertical-align: -0.1em;
 }
 
 #contactSection {
