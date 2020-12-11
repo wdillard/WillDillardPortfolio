@@ -371,19 +371,20 @@ p.copyright {
     .jobTitle {
         font-size: 20px;
     }
+    .arrow {
+        display: none;
+    }
     #aboutSection {
+        flex-direction: column;
         height: auto;
     }
     #willPhoto {
         height: 150px;
     }
-    #aboutMeIntro {
-        font-size: 16px;
-        text-align: center;
-    }
     #aboutMeBody { 
         font-size: 14px;
-        width: 100%
+        width: 100%;
+        text-align: center;
     }
     #projectSection {
         height: auto;
@@ -418,19 +419,20 @@ p.copyright {
     .jobTitle {
         font-size: 20px;
     }
+    .arrow {
+        display: none;
+    }
     #aboutSection {
+        flex-direction: column;
         height: auto;
     }
     #willPhoto {
         height: 150px;
     }
-    #aboutMeIntro {
-        font-size: 16px;
-        text-align: center;
-    }
     #aboutMeBody { 
         font-size: 16px;
-        width: 100%
+        width: 100%;
+        text-align: center;
     }
     #projectSection {
         height: auto;
@@ -465,19 +467,20 @@ p.copyright {
     .jobTitle {
         font-size: 40px;
     }
+    .arrow {
+        display: none;
+    }
     #aboutSection {
+        flex-direction: column;
         height: auto;
     }
     #willPhoto {
         height: 250px;
     }
-    #aboutMeIntro {
-        font-size: 24px;
-        text-align: center;
-    }
     #aboutMeBody { 
         font-size: 20px;
-        width: 100%
+        width: 100%;
+        text-align: center;
     }
     p {
         line-height: 2rem;
@@ -518,19 +521,20 @@ p.copyright {
     .jobTitle {
         font-size: 40px;
     }
+    .arrow {
+        display: none;
+    }
     #aboutSection {
+        flex-direction: column;
         height: auto;
     }
     #willPhoto {
         height: 250px;
     }
-    #aboutMeIntro {
-        font-size: 36px;
-        text-align: center;
-    }
     #aboutMeBody { 
         font-size: 28px;
-        width: 100%
+        width: 100%;
+        text-align: center;
     }
     p {
         line-height: 2.2rem;
