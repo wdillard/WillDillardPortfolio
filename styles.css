@@ -131,6 +131,7 @@ body {
     display: block;
     box-sizing: border-box;
     border: none;
+    border-radius: 6px;
     border-right: 3px solid white;
     border-bottom: 3px solid white;
     animation: animate 1s linear infinite;
@@ -167,11 +168,11 @@ body {
 }
 @keyframes animate {
     0% {
-        border-color: #fff;
+        border-color: #247fbf;
         transform: translate(0,0);
     }
     20% {
-        border-color: #fff;
+        border-color: #247fbf;
         transform: translate(15px,15px);
     }
     20.1%,100% {
