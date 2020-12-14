@@ -115,6 +115,35 @@ body {
     top: 1px;
 }
 
+#resumeButtonLower {
+    background-color: black;
+	border-radius:25px;
+	border:1px solid white;
+    display:inline-block;
+	cursor:grab;
+    color:white;
+    font-family: 'Spartan', sans-serif;
+	font-size:16px;
+	padding:10px 15px 7px 15px;
+    text-decoration: none;
+    margin-top: 18px;
+    display: none;
+}
+
+#resumeButtonLower:hover {
+    background-color: #247FBF;
+    color:black;
+}
+
+#resumeButtonLower:focus {
+    outline: none;
+}
+
+#resumeButtonLower:active {
+    position: relative;
+    top: 1px;
+}
+
 .arrow {
     position: relative;
     width: 50px;
@@ -368,9 +397,11 @@ p.copyright {
 /* ==========Media========== */
 
 @media only screen and (min-width: 280px) and (max-width: 568px){
-    #navbar a {
-        font-size: 10px;
-        background-color: black;
+    body {
+        background: black;
+    }
+    #navbar {
+        display: none;
     }
     #introSection {
         display: flex;
@@ -398,9 +429,16 @@ p.copyright {
         justify-content: center;
         align-items: center;
         height: auto;
+        background-color: #333;
+        -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        padding: 65px 10px;
     }
     #willPhoto {
         height: 150px;
+        margin-right: 0;
+    }
+    #resumeImage {
         margin-right: 0;
     }
     .aboutMeBody { 
@@ -429,13 +467,28 @@ p.copyright {
     }
     #contactSection {
         height: auto;
+        background-color: #222;
+        clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
+        padding: 65px 10px;
+        border: none;
+    }
+    #resumeButton {
+        display: none;
+    }
+    #resumeButtonLower {
+        display: block;
+    }
+    .footer {
+        background-color: #000;
     }
 }
 
 @media only screen and (min-width: 568px) and (max-width: 767px){
-    #navbar a {
-        font-size: 10px;
-        background-color: black;
+    body {
+        background: black;
+    }
+    #navbar {
+        display: none;
     }
     #introSection {
         display: flex;
@@ -463,9 +516,16 @@ p.copyright {
         justify-content: center;
         align-items: center;
         height: auto;
+        background-color: #333;
+        -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        padding: 65px 10px;
     }
     #willPhoto {
         height: 150px;
+        margin-right: 0;
+    }
+    #resumeImage {
         margin-right: 0;
     }
     .aboutMeBody { 
@@ -494,13 +554,28 @@ p.copyright {
     }
     #contactSection {
         height: auto;
+        background-color: #222;
+        clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
+        padding: 65px 10px;
+        border: none;
+    }
+    #resumeButton {
+        display: none;
+    }
+    #resumeButtonLower {
+        display: block;
+    }
+    .footer {
+        background-color: #000;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 900px){
-    #navbar a {
-        font-size: 16px;
-        background-color: black;
+    body {
+        background: black;
+    }
+    #navbar {
+        display: none;
     }
     #introSection {
         display: flex;
@@ -528,9 +603,16 @@ p.copyright {
         justify-content: center;
         align-items: center;
         height: auto;
+        background-color: #333;
+        -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        padding: 65px 10px;
     }
     #willPhoto {
         height: 250px;
+        margin-right: 0;
+    }
+    #resumeImage {
         margin-right: 0;
     }
     .aboutMeBody { 
@@ -548,7 +630,7 @@ p.copyright {
         align-items: center;
         text-align: center;
     }
-    p {
+    .aboutMeBody p {
         line-height: 2rem;
         text-align: center;
     }
@@ -560,16 +642,31 @@ p.copyright {
     }
     #contactSection {
         height: auto;
+        background-color: #222;
+        clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
+        padding: 65px 10px;
+        border: none;
+    }
+    #resumeButton {
+        display: none;
+    }
+    #resumeButtonLower {
+        display: block;
+    }
+    .footer {
+        background-color: #000;
     }
     h4 {
         font-size: 30px;
     }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1024px){
-    #navbar a {
-        font-size: 20px;
-        background-color: black;
+@media only screen and (min-width: 901px){
+    body {
+        background: black;
+    }
+    #navbar {
+        display: none;
     }
     #introSection {
         display: flex;
@@ -597,9 +694,16 @@ p.copyright {
         justify-content: center;
         align-items: center;
         height: auto;
+        background-color: #333;
+        -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+        padding: 65px 10px;
     }
     #willPhoto {
         height: 250px;
+        margin-right: 0;
+    }
+    #resumeImage {
         margin-right: 0;
     }
     .aboutMeBody { 
@@ -617,7 +721,8 @@ p.copyright {
         align-items: center;
         text-align: center;
     }
-    p {
+    .aboutMeBody p {
+        font-size: 20px;
         line-height: 2.2rem;
         text-align: center;
     }
@@ -629,6 +734,19 @@ p.copyright {
     }
     #contactSection {
         height: auto;
+        background-color: #222;
+        clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
+        padding: 65px 10px;
+        border: none;
+    }
+    #resumeButton {
+        display: none;
+    }
+    #resumeButtonLower {
+        display: block;
+    }
+    .footer {
+        background-color: #000;
     }
     h4 {
         font-size: 30px;
