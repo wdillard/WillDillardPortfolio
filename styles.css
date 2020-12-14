@@ -21,7 +21,7 @@
 
 #navbar a:hover {
     background: none;
-    color: red;
+    color: #247fbf;
 }
 
 body {
@@ -197,11 +197,19 @@ body {
     align-items: center;
 }
 
+#resumeImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 40px;
+}
+
 #willPhoto {
     height: 400px;
     border-radius: 50%;
     border: solid 2px white;
-    margin-right: 100px;
+    margin-right: 60px;
 }
 
 #aboutMeIntro {
@@ -254,6 +262,8 @@ body {
     position: relative;
     width: 250px;
     margin: 50px;
+    border-radius: 15px;
+    border: solid 2px white;
 }
   
 .image {
@@ -264,9 +274,9 @@ body {
     border-radius: 15px;
     transition: .5s ease;
     backface-visibility: hidden;
-    border: solid 2px white;
+    filter: grayscale(100%);
 }
-  
+
 .overlay {
     transition: .5s ease;
     opacity: 0;
@@ -280,6 +290,7 @@ body {
   
 .container:hover .image {
     opacity: 0.3;
+    filter: grayscale(0%);
 }
   
 .container:hover .overlay {
@@ -313,7 +324,6 @@ h4 {
     font-size: 24px;
 }
 .iconLinks {
-    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -383,15 +393,32 @@ p.copyright {
         display: none;
     }
     #aboutSection {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
     }
     #willPhoto {
         height: 150px;
+        margin-right: 0;
     }
-    #aboutMeBody { 
+    .aboutMeBody { 
         font-size: 14px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMeBody h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .aboutMeBody p {
         text-align: center;
     }
     #projectSection {
@@ -431,15 +458,32 @@ p.copyright {
         display: none;
     }
     #aboutSection {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
     }
     #willPhoto {
         height: 150px;
+        margin-right: 0;
     }
-    #aboutMeBody { 
+    .aboutMeBody { 
         font-size: 16px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMeBody h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .aboutMeBody p {
         text-align: center;
     }
     #projectSection {
@@ -479,19 +523,34 @@ p.copyright {
         display: none;
     }
     #aboutSection {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
     }
     #willPhoto {
         height: 250px;
+        margin-right: 0;
     }
-    #aboutMeBody { 
+    .aboutMeBody { 
         font-size: 20px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMeBody h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
     p {
         line-height: 2rem;
+        text-align: center;
     }
     #projectSection {
         height: auto;
@@ -533,19 +592,34 @@ p.copyright {
         display: none;
     }
     #aboutSection {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
     }
     #willPhoto {
         height: 250px;
+        margin-right: 0;
     }
-    #aboutMeBody { 
+    .aboutMeBody { 
         font-size: 28px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMeBody h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
     p {
         line-height: 2.2rem;
+        text-align: center;
     }
     #projectSection {
         height: auto;
