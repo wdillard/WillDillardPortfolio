@@ -661,7 +661,7 @@ p.copyright {
     }
 }
 
-@media only screen and (min-width: 901px){
+@media only screen and (min-width: 901px) and (max-width: 1024px){
     body {
         background: black;
     }
