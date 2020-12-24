@@ -52,11 +52,13 @@ body {
     height: 800px;
   }
 
-#logo {
-    height: 75px;
-    border-radius: 15%;
-    border: 2px solid #444;
+.logo {
+    height: 200px;
     margin-bottom: 15px;
+    /* border: solid white 2px;
+    border-radius: 15px;
+    background: rgb(36,127,191);
+    background: linear-gradient(225deg, #247fbf 0%, #222 60%, #000 100%); */
 }
 
 .fullname {
@@ -85,63 +87,6 @@ body {
     font-size: 36px;
     color: #444;
     font-weight: 300;
-}
-
-#resumeButton {
-    background-color: black;
-	border-radius:25px;
-	border:1px solid white;
-    display:inline-block;
-	cursor:grab;
-    color:white;
-    font-family: 'Spartan', sans-serif;
-	font-size:16px;
-	padding:10px 15px 7px 15px;
-    text-decoration: none;
-    margin-top: 18px;
-}
-
-#resumeButton:hover {
-    background-color: #247FBF;
-    color:black;
-}
-
-#resumeButton:focus {
-    outline: none;
-}
-
-#resumeButton:active {
-    position: relative;
-    top: 1px;
-}
-
-#resumeButtonLower {
-    background-color: black;
-	border-radius:25px;
-	border:1px solid white;
-    display:inline-block;
-	cursor:grab;
-    color:white;
-    font-family: 'Spartan', sans-serif;
-	font-size:16px;
-	padding:10px 15px 7px 15px;
-    text-decoration: none;
-    margin-top: 18px;
-    display: none;
-}
-
-#resumeButtonLower:hover {
-    background-color: #247FBF;
-    color:black;
-}
-
-#resumeButtonLower:focus {
-    outline: none;
-}
-
-#resumeButtonLower:active {
-    position: relative;
-    top: 1px;
 }
 
 .arrow {
@@ -355,9 +300,13 @@ h4 {
 .iconLinks {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 200px;
+}
+
+.iconLinks a {
+    margin: 10px;
 }
 
 #linkedinIcon {
@@ -373,6 +322,13 @@ h4 {
 #githubIcon {
     content: url('https://api.iconify.design/codicon:github-inverted.svg?color=white&height=50');
     vertical-align: -0.125em;
+}
+
+.logoResume {
+    height: 55px;
+    background: none;
+    vertical-align: -0.3em;
+    fill: #fff;
 }
 
 footer {
@@ -472,12 +428,6 @@ p.copyright {
         padding: 65px 10px;
         border: none;
     }
-    #resumeButton {
-        display: none;
-    }
-    #resumeButtonLower {
-        display: block;
-    }
     .footer {
         background-color: #000;
     }
@@ -558,12 +508,6 @@ p.copyright {
         clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
         padding: 65px 10px;
         border: none;
-    }
-    #resumeButton {
-        display: none;
-    }
-    #resumeButtonLower {
-        display: block;
     }
     .footer {
         background-color: #000;
@@ -646,12 +590,6 @@ p.copyright {
         clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
         padding: 65px 10px;
         border: none;
-    }
-    #resumeButton {
-        display: none;
-    }
-    #resumeButtonLower {
-        display: block;
     }
     .footer {
         background-color: #000;
@@ -738,12 +676,6 @@ p.copyright {
         clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
         padding: 65px 10px;
         border: none;
-    }
-    #resumeButton {
-        display: none;
-    }
-    #resumeButtonLower {
-        display: block;
     }
     .footer {
         background-color: #000;
