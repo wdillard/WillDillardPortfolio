@@ -57,38 +57,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* @keyframes spin {
-    from{
-        transform: rotateY(0deg);
-    }
-    to{
-        transform: rotateY(360deg);
-    }
-}
-.logo {
-    animation-name: spin;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 7s;
-    height: 200px;
-    margin-bottom: 15px;
-} */
-
-/* @-webkit-keyframes rotation {
-    from {
-            -webkit-transform: rotate(0deg);
-    }
-    to {
-            -webkit-transform: rotate(359deg);
-    }
-}
-
-.logo {
-    -webkit-animation: rotation 7s infinite linear;
-    height: 200px;
-    margin-bottom: 15px;
-} */
-
 .fullname {
     display: flex;
     flex-direction: row;
@@ -115,7 +83,64 @@ body {
     font-size: 36px;
     color: #444;
     font-weight: 300;
+    /* -webkit-animation:colorchange 5s infinite alternate; */
 }
+
+/* @-webkit-keyframes colorchange {
+    0% {
+    
+    color: #00E1F6;
+    }
+    
+    10% {
+    
+    color: #01DF18;
+    }
+    
+    20% {
+    
+    color: #D1DF00;
+    }
+    
+    30% {
+    
+    color: #DF0800;
+    }
+    
+    40% {
+    
+    color: #DF00D2;
+    }
+    
+    50% {
+    
+    color: #0007DF;
+    }
+    
+    60% {
+    
+    color: #DF00D2;
+    }
+    
+    70% {
+    
+    color: #DF0800;
+    }
+    80% {
+    
+    color: #D1DF00;
+    }
+    
+    90% {
+    
+    color: #01DF18;
+    }
+    
+    100% {
+    
+    color: #00E1F6;
+    }
+} */
 
 .arrow {
     position: relative;
