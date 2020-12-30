@@ -96,7 +96,7 @@ body {
     0%   {background-position: 0% 100%;}
     50%  {background-position: 100% 0%;}
     100%   {background-position: 0% 100%;}
-  }
+}
 
 .arrow {
     position: relative;
@@ -241,6 +241,11 @@ body {
     justify-content: space-around;
 }
 
+#projectNote {
+    font-weight: 200;
+    display: none;
+}
+
 .container {
     position: relative;
     width: 250px;
@@ -248,7 +253,7 @@ body {
     border-radius: 15px;
     border: solid 2px white;
 }
-  
+
 .image {
     opacity: 1;
     display: block;
@@ -274,12 +279,12 @@ body {
 .overlay a:hover {
     -webkit-animation: rotation 1s infinite linear;
 }
-  
+
 .container:hover .image {
     opacity: 0.3;
     filter: grayscale(0%);
 }
-  
+
 .container:hover .overlay {
     opacity: 1;
 }
@@ -324,10 +329,10 @@ h4 {
 
 @-webkit-keyframes rotation {
     from {
-            -webkit-transform: rotate(0deg);
+        webkit-transform: rotate(0deg);
     }
     to {
-            -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
     }
 }
 
@@ -336,22 +341,22 @@ h4 {
 }
 
 #linkedinIcon {
-    content: url('https://api.iconify.design/entypo-social:linkedin-with-circle.svg?color=white&height=50');
+    content: url('https://api.iconify.design/entypo-social:linkedin-with-circle.svg?color=white&height=70');
     vertical-align: -0.125em;
 }
 
 #emailIcon {
-    content: url('https://api.iconify.design/ic:round-alternate-email.svg?color=white&height=54');
+    content: url('https://api.iconify.design/ic:round-alternate-email.svg?color=white&height=74');
     vertical-align: -0.125em;
 }
 
 #githubIcon {
-    content: url('https://api.iconify.design/codicon:github-inverted.svg?color=white&height=50');
+    content: url('https://api.iconify.design/codicon:github-inverted.svg?color=white&height=70');
     vertical-align: -0.125em;
 }
 
 .logoResume {
-    height: 55px;
+    height: 70px;
     background: none;
     vertical-align: -0.3em;
 }
@@ -446,6 +451,9 @@ p.copyright {
     .projectTiles {
         flex-direction: column;
     }
+    #projectNote {
+        display: block;
+    }
     #contactSection {
         height: auto;
         background-color: #222;
@@ -526,6 +534,9 @@ p.copyright {
     }
     .projectTiles {
         flex-direction: column;
+    }
+    #projectNote {
+        display: block;
     }
     #contactSection {
         height: auto;
@@ -608,6 +619,9 @@ p.copyright {
     }
     .projectTiles {
         flex-direction: column;
+    }
+    #projectNote {
+        display: block;
     }
     #contactSection {
         height: auto;
@@ -694,6 +708,9 @@ p.copyright {
     }
     .projectTiles {
         flex-direction: column;
+    }
+    #projectNote {
+        display: block;
     }
     #contactSection {
         height: auto;
