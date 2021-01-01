@@ -283,6 +283,7 @@ body {
 
 .projectOverlay a:hover {
     -webkit-animation: rotation 1s infinite linear;
+    cursor: pointer;
 }
 
 .container:hover .image {
@@ -307,6 +308,7 @@ body {
 #projectInfo {
     content: url('https://api.iconify.design/ant-design:info-circle-filled.svg?color=white&width=58');
     vertical-align: -0.125em;
+
 }
 
 .modal {
@@ -338,11 +340,13 @@ body {
 }
 
 .modalHeader .title {
+    color: #247fbf;
     font-size: 1.25rem;
     font-weight: 500;
 }
 
 .modalHeader .closeButton {
+    cursor: pointer;
     border: none;
     outline: none;
     background: none;
@@ -404,7 +408,7 @@ h4 {
         webkit-transform: rotate(0deg);
     }
     to {
-        -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(360deg);
     }
 }
 
