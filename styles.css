@@ -86,7 +86,6 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     background-image: linear-gradient(to right ,#000,#000,#00f,#f0f,#f00,#ff0,#0f0,#0ff,#00f,#000,#000);
-    /* background-image: linear-gradient(to right ,#000,#000,#444,#777,#999,#ccc,#fff,#247fbf,#fff, #ccc,#999,#777,#444,#000,#000); */
     -webkit-background-clip: text;
     background-size: 1000%;
     animation: example 8s linear infinite;
@@ -265,7 +264,9 @@ body {
     filter: grayscale(100%);
 }
 
-.overlay {
+.projectOverlay {
+    display: flex;
+    flex-direction: row;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -276,7 +277,11 @@ body {
     text-align: center;
 }
 
-.overlay a:hover {
+.projectOverlay a {
+    margin: 5px;
+}
+
+.projectOverlay a:hover {
     -webkit-animation: rotation 1s infinite linear;
 }
 
@@ -285,7 +290,7 @@ body {
     filter: grayscale(0%);
 }
 
-.container:hover .overlay {
+.container:hover .projectOverlay {
     opacity: 1;
 }
 
@@ -297,6 +302,73 @@ body {
 #projectGithub {
     content: url('https://api.iconify.design/codicon:github-inverted.svg?color=white&height=50');
     vertical-align: -0.125em;
+}
+
+#projectInfo {
+    content: url('https://api.iconify.design/ant-design:info-circle-filled.svg?color=white&width=58');
+    vertical-align: -0.125em;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    color: black;
+    background: white;
+    opacity: .8;
+    width: 900px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modalHeader {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modalHeader .title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.modalHeader .closeButton {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.modalBody {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
 
 #contactSection {
@@ -380,7 +452,7 @@ p.copyright {
     bottom: 0;
 }
 
-/* ==========Media========== */
+/* ==========Media==========  */
 
 @media only screen and (min-width: 280px) and (max-width: 568px){
     body {
