@@ -350,12 +350,13 @@ body {
     border: none;
     outline: none;
     background: none;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 .modalBody {
     padding: 10px 15px;
+    line-height: 1.6rem;
 }
 
 #overlay {
