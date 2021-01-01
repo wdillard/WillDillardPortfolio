@@ -312,6 +312,7 @@ body {
 }
 
 .modal {
+    display: block;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -323,8 +324,9 @@ body {
     color: black;
     background: white;
     opacity: .8;
-    width: 900px;
+    width: 750px;
     max-width: 80%;
+    overflow-y: initial;
 }
 
 .modal.active {
@@ -355,8 +357,14 @@ body {
 }
 
 .modalBody {
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    height: 100%;
+    max-height: calc(100% - 80px);
     padding: 10px 15px;
     line-height: 1.6rem;
+    overflow-y: auto;
 }
 
 #overlay {
@@ -531,6 +539,12 @@ p.copyright {
     #projectNote {
         display: block;
     }
+    .modal {
+        height: 80%;
+    }
+    .modalBody {
+        font-size: 11px;
+    }
     #contactSection {
         height: auto;
         background-color: #222;
@@ -614,6 +628,12 @@ p.copyright {
     }
     #projectNote {
         display: block;
+    }
+    .modal {
+        height: 80%;
+    }
+    .modalBody {
+        font-size: 11px;
     }
     #contactSection {
         height: auto;
@@ -699,6 +719,12 @@ p.copyright {
     }
     #projectNote {
         display: block;
+    }
+    .modal {
+        height: 80%;
+    }
+    .modalBody {
+        font-size: 11px;
     }
     #contactSection {
         height: auto;
@@ -788,6 +814,12 @@ p.copyright {
     }
     #projectNote {
         display: block;
+    }
+    .modal {
+        height: 80%;
+    }
+    .modalBody {
+        font-size: 11px;
     }
     #contactSection {
         height: auto;
