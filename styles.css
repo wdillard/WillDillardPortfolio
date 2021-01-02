@@ -1,60 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500&display=swap');
 
-html {
-    cursor: none;
-}
-
-#cursor {
-    position: fixed;
-}
-
- #circle1 {
-    position: absolute;
-    -webkit-animation: pulse 2s infinite;
-    animation: pulse 2s infinite;
-    background: white;
-    border-radius: 50%;
-    height: 0em;
-    width: 0em;
-    margin-top: 0em;
-    margin-left: 0em;
-} 
-#circle2 {
-    position: absolute;
-    -webkit-animation: pulse 4s infinite;
-    animation: pulse 4s infinite;
-    background: rgba(36,126,191,0.8);
-    border-radius: 50%;
-    height: 0em;
-    width: 0em;
-    margin-top: 0em;
-    margin-left: 0em;
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: .5em;
-        width: .5em;
-        margin-top: -0.25em;
-        margin-left: -0.25em;
-    }
-    50% {
-        opacity: 0.9;
-        height: 2em;
-        width: 2em;
-        margin-top: -1em;
-        margin-left: -1em;
-    }
-    100% {
-        opacity: 0.2;
-        height: .5em;
-        width: .5em;
-        margin-top: -0.25em;
-        margin-left: -0.25em;
-    }
-}
-
 #navbar {
     background-color: transparent;
     position: fixed;
@@ -510,7 +455,7 @@ footer {
     position: relative;
     height: 50px;
     width: 100%;
-    background-color: #282828;
+    background: transparent;
 }
 
 p.copyright {
