@@ -233,9 +233,14 @@ body {
 
 .projectTitle {
     background-color: transparent;
+    display: flex;
 }
 
-.projectTiles {
+.my {
+    margin-right: 10px;
+}
+
+.projectTitles {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -285,6 +290,15 @@ body {
 .projectOverlay a:hover {
     -webkit-animation: rotation 1s infinite linear;
     cursor: pointer;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 .container:hover .image {
@@ -398,8 +412,13 @@ li {
     height: 1000px;
 }
 
-.contact {
+.contactMe {
     color: white;
+    display: flex;
+}
+
+.contact {
+    margin-right: 10px;
 }
 
 h4 {
@@ -415,19 +434,6 @@ h4 {
 
 .iconLinks a {
     margin: 10px;
-}
-
-@-webkit-keyframes rotation {
-    from {
-        webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-.iconLinks a:hover {
-    -webkit-animation: rotation 1s infinite linear;
 }
 
 #linkedinIcon {
@@ -538,7 +544,7 @@ p.copyright {
     #projectSection {
         height: auto;
     }
-    .projectTiles {
+    .projectTitles {
         flex-direction: column;
     }
     #projectNote {
@@ -630,7 +636,7 @@ p.copyright {
     #projectSection {
         height: auto;
     }
-    .projectTiles {
+    .projectTitles {
         flex-direction: column;
     }
     #projectNote {
@@ -723,7 +729,7 @@ p.copyright {
     #projectSection {
         height: auto;
     }
-    .projectTiles {
+    .projectTitles {
         flex-direction: column;
     }
     #projectNote {
@@ -820,7 +826,7 @@ p.copyright {
     #projectSection {
         height: auto;
     }
-    .projectTiles {
+    .projectTitles {
         flex-direction: column;
     }
     #projectNote {

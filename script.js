@@ -1,3 +1,4 @@
+/*=========== DROP DOWN NAVBAR ===========*/
 window.onscroll = function() {scrollFunction()};
             
 function scrollFunction() {
@@ -8,6 +9,7 @@ function scrollFunction() {
   }
 }
 
+/*======= POP OUT MODALS =======*/
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
@@ -44,3 +46,27 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+  distance: '30px',
+  duration: 1800,
+  reset: true,
+});
+
+sr.reveal(`.logo, .aboutMeBody h2, .iconLinks a`, {
+  origin: 'top',
+  interval: 200,
+})
+
+sr.reveal(`.fullname, #resumeImage, .my, .contact`, {
+  origin: 'left'
+})
+
+sr.reveal(`.jobTitle, .aboutMeBody p, .projects, .me`, {
+  origin: 'right'
+})
+
+sr.reveal(`.projectTitles div`, {
+  origin: 'bottom'
+})
