@@ -54,19 +54,19 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(`.logo, .aboutMeBody h2, .iconLinks a`, {
+sr.reveal(`.logo, .aboutMeBody h2, .iconLinks a, .projectTitles div`, {
   origin: 'top',
   interval: 200,
 })
 
-sr.reveal(`.fullname, #resumeImage, .my, .contact`, {
+sr.reveal(`#firstname, #resumeImage, .my, .contact`, {
   origin: 'left'
 })
 
-sr.reveal(`.jobTitle, .aboutMeBody p, .projects, .me`, {
+sr.reveal(`#lastname, .aboutMeBody p, .projects, .me`, {
   origin: 'right'
 })
 
-sr.reveal(`.projectTitles div`, {
+sr.reveal(`.jobTitle`, {
   origin: 'bottom'
 })
