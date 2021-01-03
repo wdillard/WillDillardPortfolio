@@ -33,12 +33,16 @@
     font-weight: 500;
     content: '';
     position: absolute;
-    bottom: -2px;
-    left: 45%;
-    width: 5px;
+    bottom: 5px;
+    left: calc(50% - 15px);
+    width: 30px;
     height: 5px;
-    background-color: white;
-    border-radius: 50%;
+    border-radius: 25%;
+    color: transparent;
+    background-image: linear-gradient(to right,#00f,#f0f,#f00,#ff0,#0f0,#0ff,#00f);
+    -webkit-background-clip: padding-box;
+    background-size: 1000%;
+    animation: example 8s linear infinite;
 }
 
 body {
@@ -330,20 +334,20 @@ body {
     opacity: 1;
 }
 
+#projectInfo {
+    content: url('https://api.iconify.design/ant-design:info-circle-filled.svg?color=%23444444&width=58');
+    vertical-align: -0.125em;
+
+}
+
 #projectSite {
-    content: url('https://api.iconify.design/el:website-alt.svg?color=white&height=50');
+    content: url('https://api.iconify.design/el:website-alt.svg?color=%23444444&height=50');
     vertical-align: -0.125em;
 }
 
 #projectGithub {
-    content: url('https://api.iconify.design/codicon:github-inverted.svg?color=white&height=50');
+    content: url('https://api.iconify.design/codicon:github-inverted.svg?color=%23444444&height=50');
     vertical-align: -0.125em;
-}
-
-#projectInfo {
-    content: url('https://api.iconify.design/ant-design:info-circle-filled.svg?color=white&width=58');
-    vertical-align: -0.125em;
-
 }
 
 .modal {
