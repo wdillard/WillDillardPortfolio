@@ -30,6 +30,7 @@
 }
 
 .active-link::before{
+    font-weight: 500;
     content: '';
     position: absolute;
     bottom: -2px;
@@ -273,6 +274,7 @@ body {
     margin: 50px;
     border-radius: 15px;
     border: solid 2px white;
+
 }
 
 .image {
@@ -280,10 +282,10 @@ body {
     display: block;
     width: 250px;
     height: 250px;
-    border-radius: 15px;
+    border-radius: 12px;
     transition: .5s ease;
     backface-visibility: hidden;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
 
 .projectOverlay {
@@ -319,7 +321,7 @@ body {
 
 .container:hover .image {
     opacity: 0.3;
-    filter: grayscale(0%);
+    filter: grayscale(100%);
 }
 
 .container:hover .projectOverlay {
