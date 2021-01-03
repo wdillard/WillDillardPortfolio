@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500&display=swap');
 
-#navbar {
+.navbar {
     background-color: transparent;
     position: fixed;
     top: -50px;
@@ -9,7 +9,7 @@
     transition: top 0.3s;
 }
 
-#navbar a {
+.navbar a {
     float: left;
     display: block;
     color: white;
@@ -19,9 +19,25 @@
     font-size: 16px;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     background: none;
     color: #247fbf;
+}
+
+/* Active menu link */
+.active-link{
+    position: relative;
+}
+
+.active-link::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 body {
@@ -482,7 +498,7 @@ p.copyright {
     body {
         background: black;
     }
-    #navbar {
+    .navbar {
         display: none;
     }
     #introSection {
@@ -575,7 +591,7 @@ p.copyright {
     body {
         background: black;
     }
-    #navbar {
+    .navbar {
         display: none;
     }
     #introSection {
@@ -668,7 +684,7 @@ p.copyright {
     body {
         background: black;
     }
-    #navbar {
+    .navbar {
         display: none;
     }
     #introSection {
@@ -765,7 +781,7 @@ p.copyright {
     body {
         background: black;
     }
-    #navbar {
+    .navbar {
         display: none;
     }
     #introSection {

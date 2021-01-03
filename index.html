@@ -8,14 +8,16 @@
         <link href="utils/WDVectorRound100.svg" rel="icon" />
     </head>
     <body>
-        <nav id="navbar">
-            <a href="#introSection">Intro</a>
-            <a href="#aboutSection">About Me</a>
-            <a href="#projectSection">My Projects</a>
-            <a href="#contactSection">Contact Me</a>
+        <nav class="navbar">
+            <a class="navLink active-link" href="#introSection">Intro</a>
+            <a class="navLink"href="#aboutSection">About Me</a>
+            <a class="navLink"href="#projectSection">My Projects</a>
+            <a class="navLink"href="#contactSection">Contact Me</a>
+
+            <a><i class='bx bx-toggle-left change-theme' id="theme-button"></i></a>
         </nav>
         <div class="main">
-            <div id="introSection">
+            <section id="introSection">
                 <img class="logo" src="utils/WDVectorBox.svg">
                 <div class="fullname">
                     <div id="firstname">
@@ -28,7 +30,7 @@
                 <div class="jobTitle">
                     WEB DEVELOPER
                 </div>
-            </div>
+            </section>
             <div class="arrow">
                 <span></span>
                 <span></span>
@@ -36,7 +38,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <div id="aboutSection">
+            <section id="aboutSection">
                 <div id="resumeImage">
                     <img id="willPhoto" src="utils/WillBW.jpg" alt="Will Dillard">
                 </div>
@@ -48,8 +50,8 @@
                     <p>I have a certificate of completion from Wyncode Acadamy and I continue to work on various projects to increase my 
                         knowledge and skills. I am passionate about creating things and would like to talk about more projects.</p>
                 </div>
-            </div>
-            <div id="projectSection">
+            </section>
+            <section id="projectSection">
                 <div class="projectTitle">
                     <h4 class="my">My</h4><h4 class="projects">Projects</h4>
                 </div>              
@@ -79,8 +81,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="contactSection">
+            </section>
+            <section id="contactSection">
                 <div class="contactMe">
                     <h4 class="contact">Contact</h4><h4 class="me">Me</h4>
                 </div>
@@ -92,7 +94,7 @@
                         <img class="logoResume" src="utils/WDVectorResume.svg" alt="logo">
                     </a>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="modal" id="modalOutpost">
             <div class="modalHeader">

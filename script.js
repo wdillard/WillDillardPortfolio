@@ -3,11 +3,31 @@ window.onscroll = function() {scrollFunction()};
             
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
+    document.querySelector(".navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.querySelector(".navbar").style.top = "-50px";
   }
 }
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.navbar a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.navbar a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
 
 /*======= POP OUT MODALS =======*/
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
@@ -54,7 +74,7 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(`.logo, .aboutMeBody h2, .iconLinks a, .projectTitles div`, {
+sr.reveal(`.logo, .aboutMeBody h2, .iconLinks a`, {
   origin: 'top',
   interval: 200,
 })
@@ -64,9 +84,11 @@ sr.reveal(`#firstname, #resumeImage, .my, .contact`, {
 })
 
 sr.reveal(`#lastname, .aboutMeBody p, .projects, .me`, {
-  origin: 'right'
+  origin: 'right',
+  interval: 200,
 })
 
-sr.reveal(`.jobTitle`, {
-  origin: 'bottom'
+sr.reveal(`.jobTitle, .projectTitles div`, {
+  origin: 'bottom',
+  interval: 200,
 })
