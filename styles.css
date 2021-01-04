@@ -316,17 +316,7 @@ body {
 }
 
 .projectOverlay a:hover {
-    -webkit-animation: rotation 1s infinite linear;
     cursor: pointer;
-}
-
-@-webkit-keyframes rotation {
-    from {
-        webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
 }
 
 .container:hover .image {
