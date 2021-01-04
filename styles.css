@@ -242,6 +242,10 @@ body {
     line-height: 1.6rem;
 }
 
+.aboutMeBody p span {
+    color: #247fbf
+}
+
 #projectSection {
     color: white;
     display: flex;
@@ -460,19 +464,12 @@ h4 {
     margin: 10px;
 }
 
-#linkedinIcon {
-    content: url('https://api.iconify.design/entypo-social:linkedin-with-circle.svg?color=white&height=70');
-    vertical-align: -0.125em;
+.iconify {
+    color: white;
 }
 
-#emailIcon {
-    content: url('https://api.iconify.design/ic:round-alternate-email.svg?color=white&height=74');
-    vertical-align: -0.125em;
-}
-
-#githubIcon {
-    content: url('https://api.iconify.design/codicon:github-inverted.svg?color=white&height=70');
-    vertical-align: -0.125em;
+.iconify:hover {
+    color:#247fbf;
 }
 
 .logoResume {
@@ -488,7 +485,7 @@ footer {
     background: transparent;
 }
 
-p.copyright {
+.copyright {
     position: absolute;
     width: 100%;
     color: white;
