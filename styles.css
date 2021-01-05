@@ -72,12 +72,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 800px;
+    height: 900px;
 }
 
 .logo {
     height: 200px;
-    margin-bottom: 15px;
+    margin: 250px 0 15px;
 }
 
 .fullname {
@@ -112,6 +112,10 @@ body {
     -webkit-background-clip: text;
     background-size: 1000%;
     animation: example 8s linear infinite;
+}
+
+.spacer {
+    flex: 1;
 }
 
 @keyframes example {
