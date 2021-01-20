@@ -319,25 +319,23 @@ body {
     filter: grayscale(0%);
 }
 
-.projectOverlay {
+#projectInfo {
     opacity: 0;
     position: absolute;
     transition: 2s ease;
     top: 12%;
     left: 88%;
     transform: translate(-50%, -50%);
-}
-
-.projectOverlay a {
     cursor: pointer;
 }
 
-.container:hover .projectOverlay {
+.container:hover #projectInfo {
     opacity: 1;
 }
 
 .moreInfo {
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
 }
 
@@ -347,13 +345,13 @@ body {
 }
 
 #projectSite {
-    content: url('https://api.iconify.design/el:website-alt.svg?color=%23444444&height=36');
+    content: url('https://api.iconify.design/el:website-alt.svg?color=%23247fbf&height=36');
     vertical-align: -0.125em;
     margin-left: 1rem;
 }
 
 #projectGithub {
-    content: url('https://api.iconify.design/codicon:github-inverted.svg?color=%23444444&height=36');
+    content: url('https://api.iconify.design/codicon:github-inverted.svg?color=%23247fbf&height=36');
     vertical-align: -0.125em;
     margin-left: 1rem;
 }
@@ -414,8 +412,18 @@ body {
     overflow-y: auto;
 }
 
-li {
-    list-style: inside;
+ul li {
+    list-style: none;
+    margin: .5em;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #247fbf;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -2rem;
 }
 
 #overlay {
@@ -590,6 +598,9 @@ footer {
         clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0% 100%);
         padding: 65px 10px;
         border: none;
+    }
+    .iconLinks a {
+        margin: 2px;
     }
     .footer {
         background-color: #000;
