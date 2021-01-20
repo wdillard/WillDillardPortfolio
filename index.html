@@ -38,7 +38,6 @@
                     <span></span>
                 </div>
             </section>
-
             <section id="aboutSection">
                 <div id="resumeImage">
                     <img id="willPhoto" src="utils/WillBW.jpg" alt="Will Dillard">
@@ -59,28 +58,28 @@
                 <h6 id="projectNote">(Click on Projects for more info)</h6>
                 <div class="projectTitles">
                     <div class="container" id="outpost">
-                        <img src="utils/Outpost.jpg" alt="Outpost" class="image">
+                        <div class="projectBackground">
+                            <img src="utils/Outpost.jpg" alt="Outpost" class="image">
+                        </div>
                         <div class="projectOverlay">
                             <a id="projectInfo" data-modal-target="#modalOutpost">I</a>
-                            <a id="projectSite" href="https://outpost-gaming.herokuapp.com/"></a>
-                            <a id="projectGithub" href="https://github.com/wyncode/c39_armed_forces"></a>
                         </div>
                     </div>
                     <div class="container">
-                        <img src="utils/Beatles.jpg" alt="The Beatles" class="image">
+                        <div class="projectBackground">
+                            <img src="utils/Beatles.jpg" alt="The Beatles" class="image">
+                        </div>
                         <div class="projectOverlay">
                             <a id="projectInfo" data-modal-target="#modalBeatles"></a>
-                            <a id="projectSite" href="https://with-a-little-help.herokuapp.com/"></a>
-                            <a id="projectGithub" href="https://github.com/wyncode/c39_midterm_danny_gary_kendra_william"></a>
                         </div>
                     </div>
                     <div class="container">
-                        <img src="utils/aMazing.jpg" alt="aMazingWyncode" class="image">
+                        <div class="projectBackground">
+                            <img src="utils/aMazing.jpg" alt="aMazingWyncode" class="image">
+                        </div>
                         <div class="projectOverlay">
                             <a id="projectInfo" data-modal-target="#modalaMazingWyncode">I</a>
-                            <a id="projectGithub" href="https://github.com/wdillard/aMazing-Wyncode"></a>
                         </div>
-                    </div>
                 </div>
             </section>
             <section id="contactSection">
@@ -115,6 +114,11 @@
                         used Postman to test the creation of users, and other HTTP requests in the backend. Heroku was used to deploy the app
                         to the web</li>
                 </ul>
+                <div class="moreInfo">
+                    <h5>Find out more</h5>
+                    <a id="projectSite" href="https://outpost-gaming.herokuapp.com/"></a>
+                    <a id="projectGithub" href="https://github.com/wyncode/c39_armed_forces"></a>
+                </div>
             </div>
         </div>
         <div class="modal" id="modalBeatles">
@@ -129,6 +133,11 @@
                     <li>Built project using React and Node.js Other technologies used to improve user experience were React Bootstrap for the
                         styling and navigation. Heroku was used to deploy the app to the web</li>
                 </ul>
+                <div class="moreInfo">
+                    <h5>Find out more</h5>
+                    <a id="projectSite" href="https://with-a-little-help.herokuapp.com/"></a>
+                    <a id="projectGithub" href="https://github.com/wyncode/c39_midterm_danny_gary_kendra_william"></a>
+                </div>
             </div>
         </div>
         <div class="modal" id="modalaMazingWyncode">
@@ -143,6 +152,10 @@
                     <li>Synchronous Readline package is used to conversate with the user</li>
                     <li>This was the first project we did solo While attending Wyncode. Though it is simple I am proud that I created the idea of using school spirit and a play on words for the title.</li>
                 </ul>
+                <div class="moreInfo">
+                    <h5>Find out more</h5>
+                    <a id="projectGithub" href="https://github.com/wdillard/aMazing-Wyncode"></a>
+                </div>
             </div>
         </div>
         <div id="overlay"></div>
