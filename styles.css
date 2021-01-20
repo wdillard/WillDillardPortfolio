@@ -329,7 +329,7 @@ body {
 }
 
 .projectOverlay a {
-    margin: 5px;
+    cursor: pointer;
 }
 
 .container:hover .projectOverlay {
